@@ -1,0 +1,10 @@
+[package]
+name = "servidor_https"
+version = "0.1.0"
+edition = "2021"
+description = "Servidor HTTPS multihilo en Rust (thread pool propio + TLS con rustls)"
+
+[dependencies]
+rustls = { version = "0.23", default-features = false, features = ["ring", "std", "tls12"] }
+rustls-pemfile = "2"
+rcgen = "0.13"
